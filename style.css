@@ -1,0 +1,122 @@
+:root {
+    --bg: #F5F6FA;
+    --card: #FFFFFF;
+    --border: #EEF0F5;
+    --text-dark: #1E2229;
+    --text-mid: #6B7280;
+    --text-light: #9CA3AF;
+    --indigo: #6366F1;
+    --indigo-light: #EEF0FF;
+    --green: #10B981;
+    --green-light: #ECFDF5;
+    --orange: #F59E0B;
+    --orange-light: #FEF6E7;
+    --red: #EF4444;
+    --red-light: #FDECEC;
+    --blue: #3B82F6;
+    --blue-light: #EAF2FE;
+    --navy: #1E2749;
+    --radius: 16px;
+    --shadow: 0 1px 2px rgba(16, 24, 40, .04), 0 1px 3px rgba(16, 24, 40, .06);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text-dark);
+}
+
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+    border-right: 1px solid var(--border);
+}
+
+.logo {
+    margin-bottom: 24px;
+    padding-left: 6px;
+}
+
+.logo-icon {
+    width: 34px;
+    height: 34px;
+    background: var(--navy);
+    color: #fff;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.nav-bottom {
+    margin-top: auto;
+    border-top: 1px solid var(--border);
+    padding-top: 14px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    color: var(--text-mid);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 13px;
+    position: relative;
+    transition: background .15s;
+}
+
+.nav-item i {
+    width: 16px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--text-light);
+}
+
+.nav-item:hover {
+    background: #ffffff;
+}
+
+.nav-item.active {
+    background: var(--green-light);
+    color: #0f9d6c;
+    font-weight: 700;
+}
+
+.nav-item.active i {
+    color: #0f9d6c;
+}
+
+.badge-active {
+    margin-left: auto;
+    background: #0f9d6c;
+    color: #fff;
+    font-style: normal;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 20px;
+}
