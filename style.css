@@ -1,7 +1,7 @@
 :root {
     --bg: #F5F6FA;
     --card: #FFFFFF;
-    --border: #EEF0F5;
+    --border: #cddbfa;
     --text-dark: #1E2229;
     --text-mid: #6B7280;
     --text-light: #9CA3AF;
@@ -119,4 +119,136 @@ body {
     font-weight: 700;
     padding: 2px 8px;
     border-radius: 20px;
+}
+
+.main {
+    flex: 1;
+    padding: 13px 40px;
+    min-width: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    margin-bottom: 22px;
+    border-bottom: 1px solid var(--border);
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 9px 14px;
+    width: 280px;
+    color: var(--text-light);
+}
+
+.search input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 13px;
+    width: 100%;
+    font-family: inherit;
+}
+
+.top-actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-left: 580px;
+    padding-right: 30px;
+    height: 30px;
+    border-right: 1px solid var(--border);
+}
+
+.icon-btn {
+    /* width: 48px;
+    height: 48px; */
+    font-size: 16px;
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-mid);
+    cursor: pointer;
+    position: relative;
+}
+
+.toggle {
+    position: relative;
+    /* display: inline-block; */
+    width: 40px;
+    height: 22px;
+}
+
+.toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    background: #E2E4EA;
+    border-radius: 20px;
+    transition: .2s;
+}
+
+.slider:before {
+    content: "";
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    left: 3px;
+    top: 3px;
+    background: #fff;
+    border-radius: 50%;
+    transition: .2s;
+}
+
+.toggle input:checked+.slider {
+    background: var(--indigo);
+}
+
+.toggle input:checked+.slider:before {
+    transform: translateX(18px);
+}
+
+.toggle input:checked+.slider:after {
+    transform: translateX(-18px);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-left: 20px;
+}
+
+.profile-icon {
+    font-size: 28px;
+}
+
+.profile-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 0.01;
+}
+
+.profile-text .name {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.profile-text .role {
+    font-size: 13.5px;
+    color: var(--text-light);
 }
