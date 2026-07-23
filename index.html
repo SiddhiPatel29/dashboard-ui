@@ -120,57 +120,59 @@
             </div>
 
             <section class="stats-grid">
-                <div class="card stat-card">
-                    <div class="card-top">
-                        <span class="card-icon blue"><i class="fa-solid fa-wallet"></i></span>
-                        <span class="card-label">Total Revenue</span>
+                <div class="stat-cards">
+                    <div class="card stat-card">
+                        <div class="card-top">
+                            <span class="card-icon blue"><i class="fa-solid fa-wallet"></i></span>
+                            <span class="card-label">Total Revenue</span>
+                        </div>
+                        <div class="card-bottom">
+                            <h2>$148,500</h2>
+                            <span class="pill"><i class="fa-solid fa-arrow-up"></i>18%</span>
+                        </div>
+                        <svg class="spark" viewBox="0 0 100 30" preserveAspectRatio="none">
+                            <polyline points="0,25 15,20 30,22 45,10 60,15 75,5 100,8" />
+                        </svg>
                     </div>
-                    <div class="card-bottom">
-                        <h2>$148,500</h2>
-                        <span class="pill"><i class="fa-solid fa-arrow-up"></i>18%</span>
+                    <div class="card stat-card">
+                        <div class="card-top">
+                            <span class="card-icon purple"><i class="fa-solid fa-cart-arrow-down"></i></span>
+                            <span class="card-label">Orders</span>
+                        </div>
+                        <div class="card-bottom">
+                            <h2>1,245</h2>
+                            <span class="pill"><i class="fa-solid fa-arrow-up"></i>9%</span>
+                        </div>
+                        <svg class="spark" viewBox="0 0 100 30" preserveAspectRatio="none">
+                            <polyline points="0,15 15,20 30,12 45,18 60,8 75,14 100,6" />
+                        </svg>
                     </div>
-                    <svg class="spark" viewBox="0 0 100 30" preserveAspectRatio="none">
-                        <polyline points="0,25 15,20 30,22 45,10 60,15 75,5 100,8" />
-                    </svg>
-                </div>
-                <div class="card stat-card">
-                    <div class="card-top">
-                        <span class="card-icon purple"><i class="fa-solid fa-cart-arrow-down"></i></span>
-                        <span class="card-label">Orders</span>
+                    <div class="card stat-card">
+                        <div class="card-top">
+                            <span class="card-icon green"><i class="fa-solid fa-user-group"></i></span>
+                            <span class="card-label">Customers</span>
+                        </div>
+                        <div class="card-bottom">
+                            <h2>5,420</h2>
+                            <span class="pill"><i class="fa-solid fa-arrow-up"></i>12%</span>
+                        </div>
+                        <svg class="spark" viewBox="0 0 100 30" preserveAspectRatio="none">
+                            <polyline points="0,20 15,15 30,18 45,9 60,13 75,7 100,10" />
+                        </svg>
                     </div>
-                    <div class="card-bottom">
-                        <h2>1,245</h2>
-                        <span class="pill"><i class="fa-solid fa-arrow-up"></i>9%</span>
+                    <div class="card stat-card">
+                        <div class="card-top">
+                            <span class="card-icon orange"><i class="fa-solid fa-percent"></i></span>
+                            <span class="card-label"> Conversion Rate</span>
+                        </div>
+                        <div class="card-bottom">
+                            <h2>6.8%</h2>
+                            <span class="pill"><i class="fa-solid fa-arrow-up"></i>2.1%</span>
+                        </div>
+                        <svg class="spark" viewBox="0 0 100 30" preserveAspectRatio="none">
+                            <polyline points="0,22 15,18 30,20 45,14 60,17 75,10 100,12" />
+                        </svg>
                     </div>
-                    <svg class="spark" viewBox="0 0 100 30" preserveAspectRatio="none">
-                        <polyline points="0,15 15,20 30,12 45,18 60,8 75,14 100,6" />
-                    </svg>
-                </div>
-                <div class="card stat-card">
-                    <div class="card-top">
-                        <span class="card-icon green"><i class="fa-solid fa-user-group"></i></span>
-                        <span class="card-label">Customers</span>
-                    </div>
-                    <div class="card-bottom">
-                        <h2>5,420</h2>
-                        <span class="pill"><i class="fa-solid fa-arrow-up"></i>12%</span>
-                    </div>
-                    <svg class="spark" viewBox="0 0 100 30" preserveAspectRatio="none">
-                        <polyline points="0,20 15,15 30,18 45,9 60,13 75,7 100,10" />
-                    </svg>
-                </div>
-                <div class="card stat-card">
-                    <div class="card-top">
-                        <span class="card-icon orange"><i class="fa-solid fa-percent"></i></span>
-                        <span class="card-label"> Conversion Rate</span>
-                    </div>
-                    <div class="card-bottom">
-                        <h2>6.8%</h2>
-                        <span class="pill"><i class="fa-solid fa-arrow-up"></i>2.1%</span>
-                    </div>
-                    <svg class="spark" viewBox="0 0 100 30" preserveAspectRatio="none">
-                        <polyline points="0,22 15,18 30,20 45,14 60,17 75,10 100,12" />
-                    </svg>
                 </div>
                 <div class="card kpi-card">
                     <div class="kpi-top-row">
@@ -178,10 +180,13 @@
                         <div class="kpi-top-right">
                             <label class="switch on-dark">
                                 <input type="checkbox" checked>
-                                <span class="slider"></span>
+                                <span class="kpi-slider"></span>
                             </label>
-                            <span class="kpi-toggle-label">Toggle</span>
-                            <button class="kpi-dropdown-pill">Toggtts <i class="fa-solid fa-chevron-down"></i></button>
+                            <div>
+                                <span class="kpi-toggle-label">Toggle</span>
+                                <button class="kpi-dropdown-pill">Toggtts <i
+                                        class="fa-solid fa-chevron-down"></i></button>
+                            </div>
                         </div>
                     </div>
 
@@ -206,8 +211,9 @@
                                 <strong>Secondary Text mode</strong>
                                 <span>#6B7280</span>
                             </div>
-                            <span class="access-pill">Access</span>
                         </div>
+                        <span class="access-pill">Access</span>
+
                     </div>
                 </div>
 
