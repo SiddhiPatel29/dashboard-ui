@@ -2,7 +2,7 @@
 
 A responsive admin dashboard UI built with plain HTML and CSS — no frameworks, no build step. Recreates a SaaS-style analytics dashboard with a sidebar, KPI cards, charts, an orders table, and a set of activity/status widgets.
 
-![Dashboard preview](preview.png)
+![Dashboard preview](dashboard-preview.jpeg)
 
 ## Features
 
